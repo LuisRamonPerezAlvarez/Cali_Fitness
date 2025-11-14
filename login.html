@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cali Fitness - Usuarios Registrados</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+   <link rel="icon" type="image/png" href="CALI.png">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="bg-dark">
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="CALI.png" alt="Cali Fitness" class="logo-header" />
+      <nav class="nav">
+        <a href="login.html" class="active">Inicio</a>
+        <a href="registro.html">Registrar Usuario</a>
+        <a href="productos.html">Productos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Usuarios Registrados</h2>
+
+    <div class="search-bar">
+      <input type="text" id="buscar" placeholder="Buscar por ID o nombre..." />
+      <button class="btn-secondary" onclick="mostrarUsuarios()">Mostrar todos</button>
+      <button class="btn-danger" onclick="borrarDatos()">Borrar todos los usuarios</button>
+    </div>
+
+    <div id="notificacion" class="notificacion"></div>
+
+    <div class="table-wrap">
+      <table class="users-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Sexo</th>
+            <th>Teléfono</th>
+            <th>Correo</th>
+            <th>Suscripción</th>
+            <th>Registro</th>
+            <th>Días Restantes</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tablaUsuarios"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- ✅ MODAL PARA RENOVAR -->
+  <div id="modalRenovar" class="modal">
+    <div class="modal-content">
+      <h3>Renovar Suscripción</h3>
+      <p id="modalNombre"></p>
+      <div class="modal-buttons">
+        <button id="btnSemana" class="btn-primary">Semanal (7 días)</button>
+        <button id="btnMes" class="btn-primary">Mensual (30 días)</button>
+        <button id="btnCancelar" class="btn-secondary">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

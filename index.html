@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cali Fitness - Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+   <link rel="icon" type="image/png" href="CALI.png">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+ <link rel="icon" type="image/png" href="img/CALI.png">
+
+    <link rel="stylesheet" href="estilos.css">
+<body class="bg-dark">
+  <div class="login-container card">
+    <img src="CALI.png" alt="Cali Fitness" class="login-logo" />
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm" class="form">
+      <label>Usuario</label>
+      <input type="text" id="usuario" placeholder="" required />
+      <label>Contraseña</label>
+      <input type="password" id="contrasena" placeholder="" required />
+      <button type="submit" class="btn-primary">Ingresar</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const user = usuario.value.trim();
+      const pass = contrasena.value.trim();
+      if (user === "Alexis" && pass === "Cali123") {
+        window.location.href = "login.html";
+      } else {
+        alert("Usuario o contraseña incorrectos");
+      }
+    });
+  </script>
+</body>
+</html>

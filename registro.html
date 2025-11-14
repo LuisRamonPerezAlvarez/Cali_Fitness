@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cali Fitness - Registro</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+   <link rel="icon" type="image/png" href="CALI.png">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="bg-dark">
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="CALI.png" alt="Logo Cali Fitness" class="logo-header" />
+      <nav class="nav">
+        <a href="login.html">Inicio</a>
+        <a href="registro.html" class="active">Registrar Usuario</a>
+        <a href="productos.html">Productos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Registrar Nuevo Usuario</h2>
+    <form id="formRegistro" class="form card">
+      <label>Nombre:</label>
+      <input type="text" id="nombre" required />
+      <label>Edad:</label>
+      <input type="number" id="edad" required />
+      <label>Sexo:</label>
+      <select id="sexo" required>
+        <option value="">Seleccione...</option>
+        <option>Masculino</option>
+        <option>Femenino</option>
+      </select>
+      <label>Teléfono:</label>
+      <input type="tel" id="telefono" required />
+      <label>Correo:</label>
+      <input type="email" id="correo" required />
+      <label>Suscripción:</label>
+      <select id="suscripcion" required>
+        <option value="">Seleccione...</option>
+        <option value="semana">Semanal (7 días)</option>
+        <option value="mes">Mensual (30 días)</option>
+      </select>
+      <button type="submit" class="btn-primary">Registrar Usuario</button>
+    </form>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
