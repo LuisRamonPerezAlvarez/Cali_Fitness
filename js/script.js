@@ -1,3 +1,7 @@
+if (!localStorage.getItem("logueado")) {
+    window.location.href = "login.html";
+}
+
 (function () {
   const $ = id => document.getElementById(id);
   const form = $('formRegistro');
@@ -162,3 +166,4 @@
 
   if (tabla) mostrarUsuarios();
 })();
+
